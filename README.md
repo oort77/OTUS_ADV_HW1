@@ -25,7 +25,7 @@ All preprocessing and pipelines management will be done in ATOM.
 - Richter's Predictor: Modeling Earthquake Damage  
 https://www.drivendata.org/competitions/57/nepal-earthquake/data/
 
-**Choice of models**  
+**Choice of models:**  
 
 - Random Forest and CatBoost classifiers will compete with AutoML solution.
 LogisticRegression is added as a baseline in ATOM case.
@@ -36,8 +36,12 @@ LogisticRegression is added as a baseline in ATOM case.
 - Weighted F1 score will be used as the main performance metrics following  suggestion of the  
 competition organizers. Other metrics are collected where possible.
 
-ATOM autoML:
+**Colab notebooks**
 
-mljar-supervised AutoML:  
+**ATOM autoML:**  
+  
+<a href="https://colab.research.google.com/github/oort77/OTUS_ADV_HW1/blob/main/notebooks/otus_adv_hw1_automl_atom.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+**mljar-supervised AutoML:**  
 
 <a href="https://colab.research.google.com/github/oort77/OTUS_ADV_HW1/blob/main/notebooks/otus_adv_hw1_automl_mljar.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
