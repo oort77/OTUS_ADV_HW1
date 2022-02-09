@@ -36,12 +36,12 @@ LogisticRegression is added as a baseline in ATOM case.
 - Weighted F1 score will be used as the main performance metrics following  suggestion of the  
 competition organizers. Other metrics are collected where possible.
 
-**Colab notebooks**
+**Colab notebooks:**
 
-**ATOM autoML:**  
+**ATOM autoML**  
   
 <a href="https://colab.research.google.com/github/oort77/OTUS_ADV_HW1/blob/main/notebooks/otus_adv_hw1_automl_atom.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-**mljar-supervised AutoML:**  
+**mljar-supervised AutoML**  
 
 <a href="https://colab.research.google.com/github/oort77/OTUS_ADV_HW1/blob/main/notebooks/otus_adv_hw1_automl_mljar.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
