@@ -3,40 +3,41 @@
 **OTUS Machine Learning Advanced**
 ### **Homework 1** 
 ### AutoML
-
-*********************
-
-*********************
+*******************  
 **Goals:**  
-- Apply **anomaly detection** methods to "Credit Card Fraud Detection" dataset
-- Carry out basic EDA ☑︎
-- Use anomaly percentage, calculated by "Class" variable, as an "expert estimate" of the dataset impurity ☑︎
-- Estimate the quality of models with their predictions and "Class" variable, using classificationrt and confusion matrix ☑︎
-- Check if anomalies are separated from the rest of data with UMAP/t-sne ☑︎
 
-**Additional goals:**  
-- Try outlier detection methods in ATOM library ☑︎
-- Look into PyOD possibilities ☑︎
-- Apply voting classifier ☑︎
+AutoML: try out automatic feature generation/selection and modelling:  
+- Compare AutoML performance in ATOM library (provides TPOT wrapper)   
+https://tvdboom.github.io/ATOM/about/  
+with baseline and two out of the box models.
+- Compare AutoML performance in AutoML mljar-supervised library  
+https://github.com/mljar/mljar-supervised  
+with two out of the box models.
+In addition, will try ensembling of autoML models.
+
+**Means:**  
+
+AutoML tasks will be given to ATOM and mljar-supervised respectively.
+All preprocessing and pipelines management will be done in ATOM.
 
 **Dataset:**  
 
-- Credit Card Fraud Detection 
-https://www.kaggle.com/mlg-ulb/creditcardfraud#creditcard.csv
+- Richter's Predictor: Modeling Earthquake Damage  
+https://www.drivendata.org/competitions/57/nepal-earthquake/data/
 
-**Means:**
+**Choice of models**  
 
-All meaningful programming will be done in sklearn and ATOM https://tvdboom.github.io/ATOM/about/.  
-Will try PyOD library in a separate notebook.
+- Random Forest and CatBoost classifiers will compete with AutoML solution.
+LogisticRegression is added as a baseline in ATOM case.
 
-Sklearn:  
-<a href="https://colab.research.google.com/github/oort77/OTUS_PRO_HW3/blob/main/notebooks/otus_pro_hw3_sklearn.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>   
-ATOM:  
-<a href="https://colab.research.google.com/github/oort77/OTUS_PRO_HW3/blob/main/notebooks/otus_pro_hw3_atom.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>   
-PyOD:    
-<a href="colab.research.google.com/github/oort77/OTUS_PRO_HW3/blob/main/notebooks/otus_pro_hw3_pyod.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> 
+**Methodology:**  
 
-DBSCAN crushes Jupyter kernel on full dataset (~280,000 records). 
-Calculations on 10% data with DBSCAN are here:  
-<a href="https://colab.research.google.com/github/oort77/OTUS_PRO_HW3/blob/main/notebooks/otus_pro_hw3_sklearn_10pct.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+- OOB models' hyperparameters will be tuned with BO primarily to get some CV statistics and to level up the competition ground.  
+- Weighted F1 score will be used as the main performance metrics following  suggestion of the  
+competition organizers. Other metrics are collected where possible.
 
+ATOM autoML:
+
+mljar-supervised AutoML:  
+
+<a href="https://colab.research.google.com/github/oort77/OTUS_ADV_HW1/blob/main/notebooks/otus_adv_hw1_automl_mljar.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
