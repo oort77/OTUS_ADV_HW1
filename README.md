@@ -6,7 +6,7 @@
 ![automl](https://user-images.githubusercontent.com/73858914/153239767-95271e10-01ad-4b67-ab48-a2e99b695d8d.png)
 **Goals:**  
 
-AutoML: try out automatic feature generation/selection and modelling:  
+AutoML - try out automatic feature generation/selection and modelling:  
 - Compare AutoML performance in ATOM library (provides TPOT wrapper)   
 https://tvdboom.github.io/ATOM/about/  
 with baseline and two out of the box models.
