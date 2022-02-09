@@ -1,0 +1,8 @@
+pandas==1.4.0
+numpy==1.22.0
+atom-ml==4.11.0
+scikit-learn==1.0.2
+mljar-supervised==0.11.1
+matplotlib==3.5.1
+seaborn==0.11.2
+gdown==4.2.0
