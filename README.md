@@ -1,9 +1,9 @@
-![anomaly_detection_](https://user-images.githubusercontent.com/73858914/149597304-433afb05-5fca-4285-a158-00ff430364ff.png)
-
+<!-- ![anomaly_detection_](https://user-images.githubusercontent.com/73858914/149597304-433afb05-5fca-4285-a158-00ff430364ff.png) -->
 **OTUS Machine Learning Advanced**
 ### **Homework 1** 
+
 ### AutoML
-*******************  
+![automl](https://user-images.githubusercontent.com/73858914/153239767-95271e10-01ad-4b67-ab48-a2e99b695d8d.png)
 **Goals:**  
 
 AutoML: try out automatic feature generation/selection and modelling:  
