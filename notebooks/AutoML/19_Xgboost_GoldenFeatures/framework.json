@@ -1,0 +1,680 @@
+{
+    "uid": "5eec4d71-0bed-444d-9bf0-6e2d8c916ba1",
+    "name": "19_Xgboost_GoldenFeatures",
+    "preprocessing": [
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "foundation_type_r",
+                        "operation": "diff",
+                        "score": 0.8014687077
+                    },
+                    {
+                        "feature1": "foundation_type_i",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8045351176
+                    },
+                    {
+                        "feature1": "roof_type_x",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8074485357
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_mud_mortar_stone",
+                        "operation": "diff",
+                        "score": 0.8121500337
+                    },
+                    {
+                        "feature1": "has_superstructure_rc_engineered",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8154388533
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_rc_non_engineered",
+                        "operation": "diff",
+                        "score": 0.8165736441
+                    },
+                    {
+                        "feature1": "has_superstructure_cement_mortar_brick",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8175393343
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "ground_floor_type_m",
+                        "operation": "diff",
+                        "score": 0.8184472179
+                    },
+                    {
+                        "feature1": "plan_configuration_o",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185211919
+                    },
+                    {
+                        "feature1": "plan_configuration_a",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185928889
+                    }
+                ],
+                "new_columns": [
+                    "geo_level_1_id_diff_foundation_type_r",
+                    "foundation_type_i_sum_geo_level_1_id",
+                    "roof_type_x_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_mud_mortar_stone",
+                    "has_superstructure_rc_engineered_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_rc_non_engineered",
+                    "has_superstructure_cement_mortar_brick_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_ground_floor_type_m",
+                    "plan_configuration_o_sum_geo_level_1_id",
+                    "plan_configuration_a_sum_geo_level_1_id"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": 8
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "foundation_type_r",
+                        "operation": "diff",
+                        "score": 0.8014687077
+                    },
+                    {
+                        "feature1": "foundation_type_i",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8045351176
+                    },
+                    {
+                        "feature1": "roof_type_x",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8074485357
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_mud_mortar_stone",
+                        "operation": "diff",
+                        "score": 0.8121500337
+                    },
+                    {
+                        "feature1": "has_superstructure_rc_engineered",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8154388533
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_rc_non_engineered",
+                        "operation": "diff",
+                        "score": 0.8165736441
+                    },
+                    {
+                        "feature1": "has_superstructure_cement_mortar_brick",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8175393343
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "ground_floor_type_m",
+                        "operation": "diff",
+                        "score": 0.8184472179
+                    },
+                    {
+                        "feature1": "plan_configuration_o",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185211919
+                    },
+                    {
+                        "feature1": "plan_configuration_a",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185928889
+                    }
+                ],
+                "new_columns": [
+                    "geo_level_1_id_diff_foundation_type_r",
+                    "foundation_type_i_sum_geo_level_1_id",
+                    "roof_type_x_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_mud_mortar_stone",
+                    "has_superstructure_rc_engineered_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_rc_non_engineered",
+                    "has_superstructure_cement_mortar_brick_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_ground_floor_type_m",
+                    "plan_configuration_o_sum_geo_level_1_id",
+                    "plan_configuration_a_sum_geo_level_1_id"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": 8
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "foundation_type_r",
+                        "operation": "diff",
+                        "score": 0.8014687077
+                    },
+                    {
+                        "feature1": "foundation_type_i",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8045351176
+                    },
+                    {
+                        "feature1": "roof_type_x",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8074485357
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_mud_mortar_stone",
+                        "operation": "diff",
+                        "score": 0.8121500337
+                    },
+                    {
+                        "feature1": "has_superstructure_rc_engineered",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8154388533
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_rc_non_engineered",
+                        "operation": "diff",
+                        "score": 0.8165736441
+                    },
+                    {
+                        "feature1": "has_superstructure_cement_mortar_brick",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8175393343
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "ground_floor_type_m",
+                        "operation": "diff",
+                        "score": 0.8184472179
+                    },
+                    {
+                        "feature1": "plan_configuration_o",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185211919
+                    },
+                    {
+                        "feature1": "plan_configuration_a",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185928889
+                    }
+                ],
+                "new_columns": [
+                    "geo_level_1_id_diff_foundation_type_r",
+                    "foundation_type_i_sum_geo_level_1_id",
+                    "roof_type_x_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_mud_mortar_stone",
+                    "has_superstructure_rc_engineered_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_rc_non_engineered",
+                    "has_superstructure_cement_mortar_brick_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_ground_floor_type_m",
+                    "plan_configuration_o_sum_geo_level_1_id",
+                    "plan_configuration_a_sum_geo_level_1_id"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": 8
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "foundation_type_r",
+                        "operation": "diff",
+                        "score": 0.8014687077
+                    },
+                    {
+                        "feature1": "foundation_type_i",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8045351176
+                    },
+                    {
+                        "feature1": "roof_type_x",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8074485357
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_mud_mortar_stone",
+                        "operation": "diff",
+                        "score": 0.8121500337
+                    },
+                    {
+                        "feature1": "has_superstructure_rc_engineered",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8154388533
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_rc_non_engineered",
+                        "operation": "diff",
+                        "score": 0.8165736441
+                    },
+                    {
+                        "feature1": "has_superstructure_cement_mortar_brick",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8175393343
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "ground_floor_type_m",
+                        "operation": "diff",
+                        "score": 0.8184472179
+                    },
+                    {
+                        "feature1": "plan_configuration_o",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185211919
+                    },
+                    {
+                        "feature1": "plan_configuration_a",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185928889
+                    }
+                ],
+                "new_columns": [
+                    "geo_level_1_id_diff_foundation_type_r",
+                    "foundation_type_i_sum_geo_level_1_id",
+                    "roof_type_x_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_mud_mortar_stone",
+                    "has_superstructure_rc_engineered_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_rc_non_engineered",
+                    "has_superstructure_cement_mortar_brick_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_ground_floor_type_m",
+                    "plan_configuration_o_sum_geo_level_1_id",
+                    "plan_configuration_a_sum_geo_level_1_id"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": 8
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "foundation_type_r",
+                        "operation": "diff",
+                        "score": 0.8014687077
+                    },
+                    {
+                        "feature1": "foundation_type_i",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8045351176
+                    },
+                    {
+                        "feature1": "roof_type_x",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8074485357
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_mud_mortar_stone",
+                        "operation": "diff",
+                        "score": 0.8121500337
+                    },
+                    {
+                        "feature1": "has_superstructure_rc_engineered",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8154388533
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "has_superstructure_rc_non_engineered",
+                        "operation": "diff",
+                        "score": 0.8165736441
+                    },
+                    {
+                        "feature1": "has_superstructure_cement_mortar_brick",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8175393343
+                    },
+                    {
+                        "feature1": "geo_level_1_id",
+                        "feature2": "ground_floor_type_m",
+                        "operation": "diff",
+                        "score": 0.8184472179
+                    },
+                    {
+                        "feature1": "plan_configuration_o",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185211919
+                    },
+                    {
+                        "feature1": "plan_configuration_a",
+                        "feature2": "geo_level_1_id",
+                        "operation": "sum",
+                        "score": 0.8185928889
+                    }
+                ],
+                "new_columns": [
+                    "geo_level_1_id_diff_foundation_type_r",
+                    "foundation_type_i_sum_geo_level_1_id",
+                    "roof_type_x_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_mud_mortar_stone",
+                    "has_superstructure_rc_engineered_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_has_superstructure_rc_non_engineered",
+                    "has_superstructure_cement_mortar_brick_sum_geo_level_1_id",
+                    "geo_level_1_id_diff_ground_floor_type_m",
+                    "plan_configuration_o_sum_geo_level_1_id",
+                    "plan_configuration_a_sum_geo_level_1_id"
+                ],
+                "ml_task": "multiclass_classification"
+            },
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "golden_features": {
+                    "results_path": "AutoML",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": 8
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.5.2",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "1c7851a6-c63f-4ca1-ae54-766f76fea019",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": 8,
+                "seed": 18,
+                "objective": "multi:softprob",
+                "eta": 0.15,
+                "max_depth": 9,
+                "min_child_weight": 1,
+                "subsample": 0.7,
+                "colsample_bytree": 0.5,
+                "eval_metric": "f1",
+                "num_class": 3,
+                "explain_level": 1
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 367
+        },
+        {
+            "library_version": "1.5.2",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "86b4399d-0355-457d-a5ce-2478bfbba5b1",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": 8,
+                "seed": 18,
+                "objective": "multi:softprob",
+                "eta": 0.15,
+                "max_depth": 9,
+                "min_child_weight": 1,
+                "subsample": 0.7,
+                "colsample_bytree": 0.5,
+                "eval_metric": "f1",
+                "num_class": 3,
+                "explain_level": 1
+            },
+            "name": "learner_fold_1",
+            "best_ntree_limit": 214
+        },
+        {
+            "library_version": "1.5.2",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "78218a8d-a1f4-4b41-8a78-1f3edfdebed4",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": 8,
+                "seed": 18,
+                "objective": "multi:softprob",
+                "eta": 0.15,
+                "max_depth": 9,
+                "min_child_weight": 1,
+                "subsample": 0.7,
+                "colsample_bytree": 0.5,
+                "eval_metric": "f1",
+                "num_class": 3,
+                "explain_level": 1
+            },
+            "name": "learner_fold_2",
+            "best_ntree_limit": 343
+        },
+        {
+            "library_version": "1.5.2",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "0622e6fa-b73a-444b-b17b-6718b46cb75e",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": 8,
+                "seed": 18,
+                "objective": "multi:softprob",
+                "eta": 0.15,
+                "max_depth": 9,
+                "min_child_weight": 1,
+                "subsample": 0.7,
+                "colsample_bytree": 0.5,
+                "eval_metric": "f1",
+                "num_class": 3,
+                "explain_level": 1
+            },
+            "name": "learner_fold_3",
+            "best_ntree_limit": 484
+        },
+        {
+            "library_version": "1.5.2",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "62205959-187d-4054-869c-a4479f35e3d3",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "multiclass_classification",
+                "n_jobs": 8,
+                "seed": 18,
+                "objective": "multi:softprob",
+                "eta": 0.15,
+                "max_depth": 9,
+                "min_child_weight": 1,
+                "subsample": 0.7,
+                "colsample_bytree": 0.5,
+                "eval_metric": "f1",
+                "num_class": 3,
+                "explain_level": 1
+            },
+            "name": "learner_fold_4",
+            "best_ntree_limit": 356
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {},
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification",
+            "golden_features": {
+                "results_path": "AutoML",
+                "ml_task": "multiclass_classification",
+                "n_jobs": 8
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML/X.data",
+            "y_path": "AutoML/y.data",
+            "results_path": "AutoML"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "multiclass_classification",
+            "n_jobs": 8,
+            "seed": 18,
+            "objective": "multi:softprob",
+            "eta": 0.15,
+            "max_depth": 9,
+            "min_child_weight": 1,
+            "subsample": 0.7,
+            "colsample_bytree": 0.5,
+            "eval_metric": "f1",
+            "num_class": 3,
+            "explain_level": 1
+        },
+        "automl_random_state": 17,
+        "ml_task": "multiclass_classification",
+        "explain_level": 1,
+        "name": "19_Xgboost_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 144.0
+    },
+    "saved": [
+        "19_Xgboost_GoldenFeatures/learner_fold_0.xgboost",
+        "19_Xgboost_GoldenFeatures/learner_fold_1.xgboost",
+        "19_Xgboost_GoldenFeatures/learner_fold_2.xgboost",
+        "19_Xgboost_GoldenFeatures/learner_fold_3.xgboost",
+        "19_Xgboost_GoldenFeatures/learner_fold_4.xgboost"
+    ],
+    "predictions_fname": "19_Xgboost_GoldenFeatures/predictions_out_of_folds.csv",
+    "metric_name": "f1",
+    "final_loss": -0.7419093346635904,
+    "train_time": 547.980738401413,
+    "is_stacked": false,
+    "single_prediction_time": 0.07215666770935059
+}

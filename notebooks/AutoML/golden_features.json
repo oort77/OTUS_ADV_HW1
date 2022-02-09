@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "geo_level_1_id",
+            "feature2": "foundation_type_r",
+            "operation": "diff",
+            "score": 0.8014687077
+        },
+        {
+            "feature1": "foundation_type_i",
+            "feature2": "geo_level_1_id",
+            "operation": "sum",
+            "score": 0.8045351176
+        },
+        {
+            "feature1": "roof_type_x",
+            "feature2": "geo_level_1_id",
+            "operation": "sum",
+            "score": 0.8074485357
+        },
+        {
+            "feature1": "geo_level_1_id",
+            "feature2": "has_superstructure_mud_mortar_stone",
+            "operation": "diff",
+            "score": 0.8121500337
+        },
+        {
+            "feature1": "has_superstructure_rc_engineered",
+            "feature2": "geo_level_1_id",
+            "operation": "sum",
+            "score": 0.8154388533
+        },
+        {
+            "feature1": "geo_level_1_id",
+            "feature2": "has_superstructure_rc_non_engineered",
+            "operation": "diff",
+            "score": 0.8165736441
+        },
+        {
+            "feature1": "has_superstructure_cement_mortar_brick",
+            "feature2": "geo_level_1_id",
+            "operation": "sum",
+            "score": 0.8175393343
+        },
+        {
+            "feature1": "geo_level_1_id",
+            "feature2": "ground_floor_type_m",
+            "operation": "diff",
+            "score": 0.8184472179
+        },
+        {
+            "feature1": "plan_configuration_o",
+            "feature2": "geo_level_1_id",
+            "operation": "sum",
+            "score": 0.8185211919
+        },
+        {
+            "feature1": "plan_configuration_a",
+            "feature2": "geo_level_1_id",
+            "operation": "sum",
+            "score": 0.8185928889
+        }
+    ],
+    "new_columns": [
+        "geo_level_1_id_diff_foundation_type_r",
+        "foundation_type_i_sum_geo_level_1_id",
+        "roof_type_x_sum_geo_level_1_id",
+        "geo_level_1_id_diff_has_superstructure_mud_mortar_stone",
+        "has_superstructure_rc_engineered_sum_geo_level_1_id",
+        "geo_level_1_id_diff_has_superstructure_rc_non_engineered",
+        "has_superstructure_cement_mortar_brick_sum_geo_level_1_id",
+        "geo_level_1_id_diff_ground_floor_type_m",
+        "plan_configuration_o_sum_geo_level_1_id",
+        "plan_configuration_a_sum_geo_level_1_id"
+    ],
+    "ml_task": "multiclass_classification"
+}
